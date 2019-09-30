@@ -1,0 +1,66 @@
+<div class="headerNav" ng-controller="header" >
+    <nav class="navbar container">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <img src="/img/menu.png" alt="">
+                </button>
+                <a class="navbar-brand" href="#/i100">
+                    <img src="/img/logo.png" alt="">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav clearfix">
+                    <li class="active"><a href="/home" data-href="/home" >首页 <span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown" ng-if="device==='pc'">
+                      <a class="dropdown-toggle" onclick="goto_view('/company')" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-href="/company">公司介绍</a>
+                      <ul class="dropdown-menu">
+                          <li><a href="/profile" >企业介绍</a></li>
+                          <li><a href="/honor">企业荣誉</a></li>
+                          <li><a href="/development">发展历程</a></li>
+                          <li><a href="/target">企业目标</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown" ng-if="device==='pc'">
+                        <a class="dropdown-toggle"  onclick="goto_view('/factory')" data-href="/factory" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">工厂介绍</a>
+                        <ul class="dropdown-menu">
+                            <li ><a href="/factory/beijing">北京</a></li>
+                            <li ><a href="/factory/chongqing">重庆</a></li>
+                            <li ><a href="/factory/sichuan">四川</a></li>
+                            <li ><a href="/factory/fujian">福建</a></li>
+                            <li ><a href="/factory/anhui">安徽</a></li>
+                            <li ><a href="/factory/jiangsu">江苏</a></li>
+                        </ul>
+                    </li>
+                  <li class="dropdown" ng-if="device==='mobile'">
+                    <a class="dropdown-toggle" onclick="goto_view('/company')" style="position: relative"  role="button" aria-haspopup="true" aria-expanded="false" data-href="/company">公司介绍 <div class="arrow-menu"></div></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="/profile" >企业介绍</a></li>
+                      <li><a href="/honor">企业荣誉</a></li>
+                      <li><a href="/development">发展历程</a></li>
+                      <li><a href="/target">企业目标</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"  ng-if="device==='mobile'">
+                    <a class="dropdown-toggle"  onclick="goto_view('/factory')" style="position: relative" data-href="/factory" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">工厂介绍 <div class="arrow-menu"></div></a>
+                    <ul class="dropdown-menu">
+                        <li ><a href="/factory/beijing">北京</a></li>
+                        <li ><a href="/factory/chongqing">重庆</a></li>
+                        <li ><a href="/factory/sichuan">四川</a></li>
+                        <li ><a href="/factory/fujian">福建</a></li>
+                        <li ><a href="/factory/anhui">安徽</a></li>
+                        <li ><a href="/factory/jiangsu">江苏</a></li>
+                    </ul>
+                  </li>
+                    <li><a href="/news" data-href="/news">新闻资讯</a></li>
+                    <li><a href="/partner" data-href="/partner">合作伙伴</a></li>
+                    <li><a href="/cooperation" data-href="/cooperation">洽谈合作</a></li>
+                    <li><a href="/join" data-href="/join">加入我们</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>

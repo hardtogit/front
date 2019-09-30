@@ -1,0 +1,389 @@
+@media screen and (min-width: 1600px) {
+  .i107 {
+    padding-top: 100px;
+  }
+  .i107 .banner {
+    height: 420px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .i107 .banner .bannerImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .i107 .banner .container {
+    position: relative;
+    overflow: visible;
+    height: 100%;
+  }
+  .i107 .banner .container .label {
+    width: 260px;
+    height: 225px;
+    display: block;
+    position: absolute;
+    left: 0;
+    padding: 0;
+    bottom: -36px;
+  }
+  .i107 .detail {
+    padding: 60px 49px 60px 48px;
+  }
+  .i107 .detail .ql-align-center {
+    text-align: center;
+  }
+  .i107 .detail .title {
+    font-size: 24px;
+    border-bottom: 2px dashed #ddd;
+    padding-bottom: 40px;
+    color: #6FBA2C;
+    text-align: left;
+    position: relative;
+  }
+  .i107 .detail .title .closed {
+    position: absolute;
+    width: 80px;
+    cursor: pointer;
+    height: 80px;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+  }
+  .i107 .detail .title .time {
+    font-size: 12px;
+    color: #999;
+    margin-top: 26px;
+  }
+  .i107 .detail .text,
+  .i107 .detail p {
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #666;
+  }
+  .i107 .detail .text .subTitle,
+  .i107 .detail p .subTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .i107 .detail .textTitle {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .i107 .detail .img {
+    display: block;
+    width: 100%;
+    margin: 40px auto 0 auto;
+  }
+  .i107 .detail img {
+    max-width: 100%;
+    margin: 40px auto 0 auto;
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1600px) {
+  .i107 {
+    padding-top: 74px;
+  }
+  .i107 .banner {
+    height: 352px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  }
+  .i107 .banner .bannerImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .i107 .banner .container {
+    position: relative;
+    overflow: visible;
+    height: 100%;
+  }
+  .i107 .banner .container .label {
+    width: 208px;
+    height: 180px;
+    display: block;
+    position: absolute;
+    left: 0;
+    padding: 0;
+    bottom: -28.8px;
+  }
+  .i107 .two {
+    margin-top: 48px;
+  }
+  .i107 .two .item {
+    padding: 0 40px 24px 40px;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 24px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  .i107 .two .item:hover {
+    box-shadow: 0 4px 4px #ddd;
+  }
+  .i107 .two .item .date {
+    width: 131.2px;
+    height: 46.4px;
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    background-color: #84C759;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 46.4px;
+  }
+  .i107 .two .item .header {
+    height: 88px;
+  }
+  .i107 .two .item .header .more {
+    width: 32px;
+    height: 32px;
+    float: right;
+    margin-top: 28.8px;
+  }
+  .i107 .two .item .body .left {
+    float: left;
+    width: 584px;
+  }
+  .i107 .two .item .body .left .title {
+    font-size: 30px;
+    color: #666666;
+    font-weight: bold;
+  }
+  .i107 .two .item .body .left .text {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 32px;
+    height: 126px;
+    overflow-y: hidden;
+  }
+  .i107 .two .item .body .right {
+    float: left;
+    margin-left: 40px;
+  }
+  .i107 .two .item .body .right img {
+    width: 224px;
+    height: 172.8px;
+  }
+  .i107 .two .detail {
+    padding: 0 49px 60px 48px;
+  }
+  .i107 .two .detail .ql-align-center {
+    text-align: center;
+  }
+  .i107 .two .detail .title {
+    font-size: 24px;
+    border-bottom: 2px dashed #ddd;
+    padding-bottom: 40px;
+    color: #6FBA2C;
+    text-align: left;
+    position: relative;
+  }
+  .i107 .two .detail .title .closed {
+    position: absolute;
+    width: 80px;
+    cursor: pointer;
+    height: 80px;
+    right: 0;
+    top: 0;
+  }
+  .i107 .two .detail .title .time {
+    font-size: 12px;
+    color: #999;
+    margin-top: 26px;
+  }
+  .i107 .two .detail .text,
+  .i107 .two .detail p {
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #666;
+  }
+  .i107 .two .detail .text .subTitle,
+  .i107 .two .detail p .subTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .i107 .two .detail .textTitle {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .i107 .two .detail .img {
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .i107 .two .detail img {
+    max-width: 100%;
+    margin: 32px auto 0 auto;
+    display: block;
+  }
+}
+@media screen and (max-width: 992px) {
+  .i107 {
+    padding-top: 56px;
+  }
+  .i107 .banner {
+    height: 1.05rem;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  }
+  .i107 .banner .bannerImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .i107 .banner .container {
+    position: relative;
+    overflow: visible;
+    height: 100%;
+  }
+  .i107 .banner .container .label {
+    width: 1.3rem;
+    height: 1.12rem;
+    display: block;
+    left: 0.1rem;
+    position: absolute;
+    padding: 0;
+    bottom: -0.18rem;
+  }
+  .i107 .two {
+    margin-top: 60px;
+  }
+  .i107 .two .item {
+    padding: 0 0.15rem 0.15rem 0.15rem;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  .i107 .two .item:hover {
+    box-shadow: 0 4px 4px #ddd;
+  }
+  .i107 .two .item .date {
+    width: 0.82rem;
+    height: 0.29rem;
+    position: absolute;
+    left: -0.05rem;
+    top: 0.1rem;
+    background-color: #84C759;
+    font-size: 0.15rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0.29rem;
+  }
+  .i107 .two .item .header {
+    height: 0.55rem;
+  }
+  .i107 .two .item .header .more {
+    width: 0.2rem;
+    height: 0.2rem;
+    float: right;
+    margin-top: 0.18rem;
+  }
+  .i107 .two .item .body .left {
+    width: 100%;
+  }
+  .i107 .two .item .body .left .title {
+    font-size: 0.15rem;
+    color: #666666;
+    font-weight: bold;
+  }
+  .i107 .two .item .body .left .text {
+    font-size: 0.008rem;
+    margin-top: 0.1rem;
+    line-height: 0.2rem;
+    overflow: hidden;
+    display: -webkit-box;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+  }
+  .i107 .two .item .body .right {
+    margin-top: 0.1rem;
+  }
+  .i107 .two .item .body .right img {
+    width: 100%;
+  }
+  .i107 .two .detail {
+    padding: 0 0 0.2rem 0;
+  }
+  .i107 .two .detail .ql-align-center {
+    text-align: center;
+  }
+  .i107 .two .detail .title {
+    font-size: 0.12rem;
+    border-bottom: 0.01rem dashed #ddd;
+    padding-bottom: 0.2rem;
+    color: #6FBA2C;
+    text-align: left;
+    position: relative;
+    padding-right: 0.5rem;
+  }
+  .i107 .two .detail .title .closed {
+    position: absolute;
+    width: 0.4rem !important;
+    cursor: pointer;
+    height: 0.4rem;
+    right: 0;
+    top: 0;
+  }
+  .i107 .two .detail .title .time {
+    font-size: 0.08rem;
+    color: #999;
+    margin-top: 0.13rem;
+  }
+  .i107 .two .detail .text,
+  .i107 .two .detail p {
+    margin-top: 0.2rem;
+    font-size: 0.08rem;
+    line-height: 0.2rem;
+    color: #666;
+  }
+  .i107 .two .detail .text .subTitle,
+  .i107 .two .detail p .subTitle {
+    font-size: 0.12rem;
+    font-weight: bold;
+    margin-bottom: 0.1rem;
+  }
+  .i107 .two .detail .textTitle {
+    text-align: center;
+    margin-top: 0.2rem;
+    font-size: 0.3rem;
+    font-weight: bold;
+  }
+  .i107 .two .detail img {
+    width: 100%!important;
+    margin-bottom: 0.2rem;
+  }
+  .i107 .two .detail .img {
+    display: block;
+    width: 100%;
+    margin-top: 0.2rem;
+  }
+}
+/*# sourceMappingURL=i107.css.map */

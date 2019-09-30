@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>发展历程-永辉彩食鲜官网</title>
+    <meta name="keywords" content="永辉彩食鲜发展历程">
+    <meta name="description" content="这里提供了永辉彩食鲜公司从筹备至今及以后的发展历程,更多关于彩食鲜公司信息请访问永辉彩食鲜官方网站.">
+    <link rel="shortcut icon" href="./img/icon.ico">
+    <link href="./bootstrap/less/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="common.css">
+    <!--<link rel="stylesheet" href="./css/aos-animation.css">-->
+    <!--<link rel="stylesheet" href="./css/aos.css">-->
+    <link rel="stylesheet" href="./css/fullpage.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <script src="angular.min.js"></script>
+    <!--<script src="angular-route.js"></script>-->
+    <script src="stacktrace.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=G3e7VsRWa1UjG4pAIq959Eqs5hDfHpXc"></script>
+    <script src="APIConnection.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <link href="i101.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="app.js"></script>
+    <script src="header.js"></script>
+    <script src="baseFooter.js"></script>
+    <script src="i101.js"></script>
+    <script src="pageUtil.js"></script>
+    <script type="text/javascript">
+        var Head = document.getElementsByTagName('head')[0],style = document.createElement('style');
+        function linkScript(parm, fn) {
+            var linkScript;
+            if(/\.css[^\.]*$/.test(parm)) {
+                linkScript = document.createElement("link");
+                linkScript.type = "text/" + ("css");
+                linkScript.rel = "stylesheet";
+                linkScript.href = parm;
+            } else {
+                linkScript = document.createElement("script");
+                linkScript.type = "text/" + ("javascript");
+                linkScript.src = parm;
+            }
+            Head.insertBefore(linkScript, Head.lastChild)
+            linkScript.onload = linkScript.onerror = function() {
+                if(fn) fn()
+            }
+        }
+        var htmlDc=document.getElementsByTagName('html')[0];
+        setRootSize=function () {
+            if($(window).width()<=992) {
+                var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+                var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+                htmlDc.style.fontSize = clientWidth / 3.75 + 'px';
+                htmlDc.style.minHeight = clientHeight + 'px';
+            }
+        };
+        setRootSize();
+        $(window).resize(function () {
+            setRootSize();
+        })
+        if($(window).width()<=992){
+
+        }else{
+            linkScript('./css/aos-animation.css')
+            linkScript('./css/aos.css')
+        }
+    </script>
+    <script type="text/javascript">
+        // var _hmt = _hmt || [];
+        // (function() {
+        //   var hm = document.createElement("script");
+        //   hm.src = "https://hm.baidu.com/hm.js?ebade967bb1509cfc80729c8e54d71f0";
+        //   var s = document.getElementsByTagName("script")[0];
+        //   s.parentNode.insertBefore(hm, s);
+        // })();
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?ab52f1ae5eb1c7a9e8bcd4373aebc978";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script type="text/javascript">
+    </script>
+</head>
+
+<body ng-app="iweb" ng-controller="i101">
+<div class="i101" id="one">
+    <div ng-include="'header.html'"></div>
+    <div class="banner" data-ng-style="{'background-image':'url('+staticRootPath+entity.banner+')'}">
+        <!--<img width="100%" height="100%" ng-src="{{'http://www.freshfood.cn/cgi-bin/download.pl?fid='+entity.banner+'&proj=yh_ga'}}" alt="">-->
+    </div>
+    <div class="container two" >
+        <img class="title" src="./img/i101/title.png" alt="">
+        <div class="text">
+            <div class="item">
+                {{entity.description}}
+            </div>
+        </div>
+    </div>
+    <div class="three container">
+        <img  ng-src="{{staticRootPath+entity.des1}}" alt="">
+    </div>
+    <div class="four" id="two">
+        <div class="container">
+            <img class="title" src="./img/i101/four1.png" alt="">
+            <div class="content">
+                <div class="left">
+                    <img  ng-src="{{staticRootPath+entity.honor1}}" alt="">
+                </div>
+                <div class="right">
+                    <ul class="list-unstyled">
+                        <li ng-repeat="item in entity.records"><span>◎</span>{{item}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  class="five" id="three">
+        <img class="title hidden-xs" src="./img/i101/five1.png" alt="">
+        <img class="title visible-xs" src="./img/i101/five1m.png" alt="">
+        <img class="detail"  ng-src="{{staticRootPath+entity.progress1}}" alt="">
+    </div>
+    <div class="six" id="four" style="background-image:url{{'('+staticRootPath+entity.banner1+')'}}">
+        <div class="container">
+            <!--<div class="text1">永辉彩食鲜愿景</div>-->
+            <!--<div class="text2">为满足用户需求提供安全、健康、高性价比的食材</div>-->
+        </div>
+    </div>
+</div>
+<div ng-include="'baseFooter.html'"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<div class="footer " ng-controller="baseFooter">
+  <div ng-show="showBack" class="backTop hidden-xs" ng-click="scrollToTop()">
+
+  </div>
+  <div class="text-center bottom" >
+    永辉彩食鲜发展有限公司　<a class="link" href="http://www.beian.miit.gov.cn" target="_blank">闽ICP备19014477号</a>
+  </div>
+
+
+</div>
+<style>
+  .link{
+    color: #333;
+  }
+  /*.footer{*/
+    /*position: fixed;*/
+    /*z-index: 100;*/
+    /*width: 100%;*/
+    /*left: 0;*/
+    /*transition: 1000ms;*/
+    /*bottom: 0;*/
+  /*}*/
+  @media screen and (min-width: 1600px) {
+    .footer .backTop {
+      position: fixed;
+      z-index: 100;
+      width: 70px;
+      cursor: pointer;
+      height: 56px;
+      right: 100px;
+      bottom: 120px;
+      background-image: url("/img/backTop.png");
+      background-size: 100% 100%;
+    }
+
+    .footer .backTop:hover {
+      background-image: url("/img/backTopH.png");
+    }
+
+    .footer .logo {
+      height: 100px;
+      background-color: #000;
+    }
+
+    .footer img {
+      width: 441px;
+      float: right;
+      margin-right: 70px;
+      margin-top: 20px;
+    }
+    .bottom{
+      font-size: 12px;
+      height: 100px;
+      line-height: 100px;
+      background-color: #fff;
+      border-top: 1px solid #333;
+    }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1600px) {
+    .footer .backTop {
+      position: fixed;
+      z-index: 100;
+      width: 56px;
+      cursor: pointer;
+      height: 44.8px;
+      right: 80px;
+      bottom: 120px;
+      background-image: url("./img/backTop.png");
+      background-size: 100% 100%;
+    }
+
+    .footer .backTop:hover {
+      background-image: url("./img/backTopH.png");
+    }
+
+    .footer .logo {
+      height: 80px;
+      background-color: #000;
+    }
+
+    .footer img {
+      width: 352px;
+      float: right;
+      margin-right: 56px;
+      margin-top: 16px;
+    }
+    .bottom{
+      font-size: 12px;
+      height: 80px;
+      line-height: 80px;
+      background-color: #fff;
+      border-top: 1px solid #333;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .footer .backTop{
+      position: fixed;
+      z-index: 100;
+      width: 70px;
+      cursor: pointer;
+      height: 56px;
+      right:100px ;
+      bottom: 120px;
+      background-image: url("./img/backTop.png");
+      background-size: 100% 100%;
+    }
+    .footer .backTop:hover{
+      background-image: url("./img/backTopH.png");
+    }
+    .footer .logo{
+      height: .5rem;
+      padding: .12rem;
+      background-color: #000;
+    }
+    .footer img{
+      width: 2.20rem;
+      display: block;
+      margin: 0 auto;
+    }
+    .bottom{
+      font-size: .08rem;
+      height: .5rem;
+      line-height: .5rem;
+      background-color: #fff;
+      border-top: 1px solid #333;
+    }
+  }
+</style>

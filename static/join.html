@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>加入我们-永辉彩食鲜官网</title>
+    <meta name="keywords" content="加入我们">
+    <meta name="description" content="永辉彩食鲜加入我们提供应聘指南,详细联系地址、联系电话、邮箱等.更多详情请访问永辉彩食鲜官方网站."/>
+    <link rel="shortcut icon" href="./img/icon.ico">
+    <link href="./bootstrap/less/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="common.css">
+    <!--<link rel="stylesheet" href="./css/aos-animation.css">-->
+    <!--<link rel="stylesheet" href="./css/aos.css">-->
+    <link rel="stylesheet" href="./css/fullpage.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <script src="angular.min.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="stacktrace.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=G3e7VsRWa1UjG4pAIq959Eqs5hDfHpXc"></script>
+    <script src="APIConnection.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <link href="i106.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="app.js"></script>
+    <script src="header.js"></script>
+    <script src="baseFooter.js"></script>
+    <script src="i106.js"></script>
+    <script src="pageUtil.js"></script>
+    <script type="text/javascript">
+        var Head = document.getElementsByTagName('head')[0],style = document.createElement('style');
+        function linkScript(parm, fn) {
+            var linkScript;
+            if(/\.css[^\.]*$/.test(parm)) {
+                linkScript = document.createElement("link");
+                linkScript.type = "text/" + ("css");
+                linkScript.rel = "stylesheet";
+                linkScript.href = parm;
+            } else {
+                linkScript = document.createElement("script");
+                linkScript.type = "text/" + ("javascript");
+                linkScript.src = parm;
+            }
+            Head.insertBefore(linkScript, Head.lastChild)
+            linkScript.onload = linkScript.onerror = function() {
+                if(fn) fn()
+            }
+        }
+        var htmlDc=document.getElementsByTagName('html')[0];
+        setRootSize=function () {
+            if($(window).width()<=992) {
+                var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+                var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+                htmlDc.style.fontSize = clientWidth / 3.75 + 'px';
+                htmlDc.style.minHeight = clientHeight + 'px';
+            }
+        };
+        setRootSize();
+        $(window).resize(function () {
+            setRootSize();
+        })
+        if($(window).width()<=992){
+
+        }else{
+            linkScript('./css/aos-animation.css')
+            linkScript('./css/aos.css')
+        }
+    </script>
+    <script type="text/javascript">
+        // var _hmt = _hmt || [];
+        // (function() {
+        //   var hm = document.createElement("script");
+        //   hm.src = "https://hm.baidu.com/hm.js?ebade967bb1509cfc80729c8e54d71f0";
+        //   var s = document.getElementsByTagName("script")[0];
+        //   s.parentNode.insertBefore(hm, s);
+        // })();
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?ab52f1ae5eb1c7a9e8bcd4373aebc978";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script type="text/javascript">
+    </script>
+</head>
+
+<body ng-app="iweb" ng-controller="i106">
+<div class="i106">
+    <div ng-include="'header.html'"></div>
+    <div class="banner" data-ng-style="{'background-image':'url('+staticRootPath+entity.banner+')'}">
+        <!--<img  class="bannerImg" ng-src="{{staticRootPath+entity.banner}}" alt="">-->
+        <div class="container">
+            <img src="./img/i106/one1.png" class="label"/>
+        </div>
+    </div>
+    <div class="two">
+        <div class="container">
+            <div class="left" style="cursor:pointer" ng-click="openLeft()">
+                <img class="bg"  ng-src="{{staticRootPath+entity.des1}}" alt="">
+                <div class="bottom">
+                    社会招聘
+                </div>
+            </div>
+            <div class="right" style="cursor:pointer" ng-click="openRight()">
+                <img class="bg"  ng-src="{{staticRootPath+entity.des2}}" alt="">
+                <div class="bottom">
+                    校园招聘
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="three">
+        <div class="container">
+            <img class="title" src="./img/i106/three1.png" alt="">
+            <div class="items">
+                <div class="item">
+                    <div class="title">{{entity.title}}</div>
+                    <div ng-repeat="item in entity.content">
+                        {{item}}
+                    </div>
+                </div>
+                <div class="item" ng-repeat="item in entity.joinsubcompany">
+                    <div class="title">{{item.name}}</div>
+                    地址：{{item.address}}<br/>
+                    邮箱：{{item.email}}<br/>
+                    电话：{{item.phone}}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div ng-include="'baseFooter.html'"></div>
+</body>
+</html>
